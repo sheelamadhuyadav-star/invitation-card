@@ -1,0 +1,164 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 15px;
+}
+
+.premium-modal {
+  width: 460px;
+  max-width: 92%;
+  background: #f7f2e8;
+  border: 2px solid #d4af37;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.35);
+}
+
+.close-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #d4af37;
+  background: transparent;
+  color: #d4af37;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal-header {
+  padding: 35px 20px;
+  text-align: center;
+  color: #d4af37;
+}
+
+.nikah-header {
+  background: linear-gradient(
+    90deg,
+    #082406,
+    #0d3609,
+    #082406
+  );
+}
+
+.valima-header {
+  background: linear-gradient(
+    90deg,
+    #15042e,
+    #1e053d,
+    #15042e
+  );
+}
+
+.modal-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-family: "Great Vibes", cursive;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+.modal-header p {
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.modal-body {
+  padding: 30px;
+}
+
+.event-type {
+  color: #c79f38;
+  letter-spacing: 4px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.modal-body h3 {
+  margin-top: 0;
+  color: #43311a;
+  font-family: "Cinzel", serif;
+  font-size: 32px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 18px 0;
+  color: #4a3720;
+}
+
+.maps-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  background: #341b00;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.close-button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #d4af37;
+  background: transparent;
+  color: #9b7b2f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .premium-modal {
+    max-width: 95%;
+    border-radius: 18px;
+  }
+
+  .modal-header {
+    padding: 25px 15px;
+  }
+
+  .modal-header h2 {
+    font-size: 32px;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+  .modal-body h3 {
+    font-size: 24px;
+  }
+
+  .info-row {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .maps-button,
+  .close-button {
+    padding: 14px;
+    font-size: 14px;
+  }
+}

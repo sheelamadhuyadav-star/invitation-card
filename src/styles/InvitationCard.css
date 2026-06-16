@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 15px;
+  background: #0a0a0a;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fdf8ee;
+  border: 2px solid #caa646;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  box-shadow:
+    0 0 20px rgba(202, 166, 70, 0.35),
+    0 0 50px rgba(202, 166, 70, 0.15);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  border: 1px solid #d8bb67;
+  pointer-events: none;
+}
+
+/* Arabic */
+
+.bismillah {
+  font-size: 18px;
+  color: #caa646;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
+/* Decorations */
+
+.ornament,
+.footer-divider {
+  color: #caa646;
+  font-size: 18px;
+  letter-spacing: 8px;
+  margin: 20px 0;
+}
+
+.divider {
+  width: 80%;
+  height: 1px;
+  margin: 25px auto;
+  background: #d9c07c;
+}
+
+/* Header */
+
+.blessing,
+.beloved,
+.compliments {
+  color: #caa646;
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-top: 15px;
+}
+
+.parents {
+  font-family: "Cinzel", serif;
+  font-size: 28px;
+  color: #57452d;
+  margin-top: 10px;
+}
+
+.sub-parent {
+  color: #9d8452;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.invite-text {
+  color: #caa646;
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.main-event {
+  font-family: "Cinzel", serif;
+  font-size: 50px;
+  color: #caa646;
+  margin-top: 20px;
+}
+
+.event-subtitle {
+  color: #a58c57;
+  letter-spacing: 4px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+/* Groom */
+
+.groom-name {
+  font-family: "Great Vibes", cursive;
+  font-size: 70px;
+  color: #2f1d0d;
+  margin: 20px 0;
+}
+
+.parent-text {
+  color: #7c6a49;
+  line-height: 1.8;
+}
+
+/* Bride */
+
+.union-text {
+  color: #caa646;
+  letter-spacing: 4px;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.daughter-label {
+  color: #caa646;
+  letter-spacing: 4px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.bride-name {
+  font-family: "Cinzel", serif;
+  font-size: 28px;
+  color: #634b24;
+  margin-top: 10px;
+}
+
+.address {
+  color: #8c7854;
+  margin-top: 12px;
+  margin-bottom: 30px;
+}
+
+/* Footer */
+
+.blessing-message {
+  margin-top: 30px;
+  color: #8f7a55;
+  line-height: 2;
+  font-style: italic;
+}
+
+.warmth {
+  margin-top: 20px;
+  color: #7f6c4c;
+  font-weight: 500;
+}
+
+.family {
+  margin-top: 15px;
+  color: #8d7752;
+  line-height: 2;
+}
+
+/* Decorative Corners */
+
+.corner {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+}
+
+.corner-top-left {
+  top: 15px;
+  left: 15px;
+  border-top: 2px solid #caa646;
+  border-left: 2px solid #caa646;
+}
+
+.corner-top-right {
+  top: 15px;
+  right: 15px;
+  border-top: 2px solid #caa646;
+  border-right: 2px solid #caa646;
+}
+
+.corner-bottom-left {
+  bottom: 15px;
+  left: 15px;
+  border-bottom: 2px solid #caa646;
+  border-left: 2px solid #caa646;
+}
+
+.corner-bottom-right {
+  bottom: 15px;
+  right: 15px;
+  border-bottom: 2px solid #caa646;
+  border-right: 2px solid #caa646;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 30px 20px;
+  }
+
+  .bismillah {
+    font-size: 15px;
+  }
+
+  .parents {
+    font-size: 22px;
+  }
+
+  .groom-name {
+    font-size: 55px;
+  }
+
+  .main-event {
+    font-size: 38px;
+  }
+
+  .bride-name {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .card {
+    padding: 25px 15px;
+  }
+
+  .groom-name {
+    font-size: 42px;
+  }
+
+  .main-event {
+    font-size: 28px;
+  }
+
+  .parents,
+  .bride-name {
+    font-size: 18px;
+  }
+
+  .corner {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ornament,
+  .footer-divider {
+    letter-spacing: 4px;
+  }
+}
