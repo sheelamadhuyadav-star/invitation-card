@@ -1,5 +1,5 @@
 const invitationData = {
-  groomName: "Mohammed Imran",
+  groomName: "Imran",
   groomFather: "Mr. Mohammed Hussain",
 
   brideFather: "Mr. Mohd. Shadullah",
